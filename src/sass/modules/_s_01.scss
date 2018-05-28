@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.s_01{
+	
+	background:linear-gradient(173deg, #03687f 0%, #005b70 100%);
+	height:30rem;
+	position:relative;
+	display: grid;
+	overflow:hidden;
+
+	&::before{
+		content:'';
+		display:block;
+		position:absolute;
+		width: 100%;
+    	height: 100%;
+    	top:11rem;
+    	
+		opacity: .5;
+    	z-index:1;
+		@include ico('idea', 52% top, contain)
+	}
+	   
+	article{
+		margin:auto;
+		text-align:left;
+		z-index:2;
+		padding:0 1.5rem;
+	}
+
+	h1{
+		width: 20rem;
+    	height: 6.5rem;
+		overflow:hidden;
+		text-indent:-999rem;
+		@include ico('logo', left bottom, cover)
+	}
+
+	p{
+		@extend %fontnormal;
+		@extend %head_type4;
+		margin:2rem 0;
+		color:$ev-grey;
+	}
+
+	.button_group{
+		.btn{
+			display:block;
+			width:$hundred;
+			&:last-child(){
+				margin:2rem 0 0 0;
+			}
+		}
+	}
+	@media (map-get($rd-types, md)){
+
+		height:32rem;
+
+		&::before{
+			top:6.4rem;
+			opacity: .5;
+		}
+		article{
+			width:80%;
+		}
+		h1{
+			width: 31rem;
+	    	height: 10rem;
+		}
+
+		.button_group{
+			.btn{
+				display:inline-block;
+				width:auto;
+				&:last-child(){
+					margin:0 0 0 2rem;
+				}
+			}
+		}
+	}
+	@media (map-get($rd-types, lg)){
+		&::before{
+			opacity: .6;
+		}
+	}
+	@media (map-get($rd-types, xl)){
+		&::before{
+			opacity: .9;
+		}
+	}
+}

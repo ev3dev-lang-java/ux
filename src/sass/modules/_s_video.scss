@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.s_video{
+	
+	
+	article{
+		padding:1.5rem;
+		background:$ev-grey4;
+
+		h3{
+		@extend %head_type3;
+		@extend %fontbold;
+		margin:0 0 2rem 0;
+		line-height: 3.2rem;
+		}
+
+		h4{
+			
+			@extend %head_type4;
+			@extend %fontbold;
+			margin:0 0 1rem 0;
+			line-height: 3.2rem;
+
+		}
+
+		p{
+			@extend %fontnormal;
+			@extend %body_type2;
+			
+			line-height: 1.8;
+			margin:0 0 2rem 0;
+		}
+		.slick-slider{
+			li{
+				div{
+					width:24rem;
+					margin:0 auto;
+				}
+			}
+			.video_des{
+				display:grid;
+				width:100%;
+				height:20rem;
+				border-radius:0.5rem;
+				@include imgBack('code','.jpg', left top);
+				a{
+					margin:auto;
+				}
+			}
+		}
+		
+	}
+
+	@media (map-get($rd-types, md)){
+		article{
+			padding:3rem;
+
+			ul {
+				li{
+					display:flex;
+					 div{
+					 	width:48%;
+
+						&.video_des{
+					 		width:48%;
+					 	}
+					 }
+				}
+			}
+		}
+
+	}
+}

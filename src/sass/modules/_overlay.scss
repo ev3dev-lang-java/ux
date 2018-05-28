@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    top: 0;
+    z-index: 5;
+
+    &.lock{
+    	display:block;
+    }
+
+	@media (map-get($rd-types, md)){
+		 &.lock{
+		 	display:none;
+		 }
+
+	}
+	@media (map-get($rd-types, lg)){}
+}

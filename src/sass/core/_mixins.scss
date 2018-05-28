@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+%replace-text-by-image-base {
+	text-indent:-9999px;
+	border:none;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin expand($name,$value){
+	-moz-#{$name}: $value;
+	-webkit-#{$name}: $value;
+	-o-#{$name}: $value;
+	-ms-#{$name}: $value;
+	#{$name}: $value;
+} 
+
+
+@mixin border-radius ($radius) {
+	@include expand (border-radius, $radius); 
+}
+
+
+@mixin ico($img,$position:0 0,$size:initial,$color:transparent,$repeat: no-repeat) {
+	background: {
+		color: $color;
+		image: url($image-path+$img+".svg"), none;
+		position: $position;
+		repeat: $repeat;
+		size: $size;
+	}
+}
+
+@mixin imgBack($imgBack, $extension:".png",$position:0 0,$size:initial,$color:transparent,$repeat: no-repeat) {
+	background: {
+		color: $color;
+		image: url($image-pathImg+$imgBack+$extension), none;
+		position: $position;
+		repeat: $repeat;
+		size: $size;
+	}
+}
+
+@mixin replaceTextWithImage($img, $width, $height) {
+	@extend %replace-text-by-image-base;
+	width: $width; 
+	height: $height;
+	@include ico($img);
+}
+
+@mixin curved-border($height, $border, $bottom:9px,  $left:-30px, $width:120%) {
+	position: absolute;
+	bottom: $bottom;
+	left: $left; 
+	width: $width;
+	height: $height;
+	border-radius: $border;
+}
+
+
+@mixin clearfix(){
+  &:after{
+	clear: both; content: "."; display: block; height: 0; visibility: hidden;
+  }
+}
+
+
+@mixin calc($property, $expression) { 
+	#{$property}: -webkit-calc(#{$expression}); 
+	#{$property}: -moz-calc(#{$expression}); 
+	#{$property}: calc(#{$expression}); 
+}
+
+
+/*  ++++++++++++++++++++++++++++
+** Animaciones y Keyframes 
++++++++++++++++++++++++++++++ */
+@mixin animation($value) {
+  -webkit-animation: $value;
+	 -moz-animation: $value;
+	   -o-animation: $value;
+	  -ms-animation: $value;
+		  animation: $value;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content }
+  @-moz-keyframes #{$name}    { @content }
+  @-o-keyframes #{$name}      { @content }
+  @-ms-keyframes #{$name}     { @content }
+  @keyframes #{$name}         { @content }
+}
+
+/* ++++++++++++++++++++++++++++++
+*** Flex Box ***
++++++++++++++++++++++++++++++++ */
+@mixin flexbox ($flex-direction:row, $justify-content:flex-start, $align-items:stretch, $flex-wrap: nowrap){
+	//display: -ms-flexbox;
+	display: flex;
+	//-ms-flex-direction: $flex-direction;
+	flex-direction: $flex-direction;
+	//-ms-justify-content: $justify-content;
+	justify-content: $justify-content;
+	//-ms-align-items: $align-items;
+	align-items: $align-items;
+	//-ms-flex-wrap: $flex-wrap;
+	flex-wrap: $flex-wrap;
+	min-height:100%;
+}
+
+@mixin grid (){
+	display: gird;
+	display: -ms-grid;
+}
+
+@mixin font-face($font-family, $font-url, $font-name) {
+  @font-face {
+	font: {family: $font-family;}
+	src: url('../'+$font-url + '/' + $font-name + '.woff') format('woff');
+  }
+}
+
+
+@mixin disabled(){
+	cursor:default;
+    pointer-events: none;
+    user-select: none;
+
+}

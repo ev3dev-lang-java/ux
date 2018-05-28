@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.btn {
+
+	border-radius: 0.4rem;
+    border: 0.1rem solid $ev-orange;
+    padding: 1.6rem 1rem;
+    text-align:center;
+    display:inline-block;
+    @extend %body_type2;
+    @extend %fontbold;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+    transition: background-color .3s, color .3s;
+
+
+    color: $ev-white;
+    background-color: $ev-orange;
+
+    &:hover{
+             color: $ev-white;
+    	    background-color: $ev-orange2;
+    		border-color: $ev-orange2;
+    }
+	
+	&.btn-secondary{
+		background: transparent;
+   		color: $ev-orange;
+
+   		&:hover{
+   			 color: $ev-white;
+    		background-color: $ev-orange;
+   		}
+	}
+	@media (map-get($rd-types, md)){
+		 padding: 1.8rem 3rem;
+	}
+
+	   
+}
+

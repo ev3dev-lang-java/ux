@@ -1,0 +1,90 @@
+
+/* Include family fonts */
+
+
+$reset-font-size: 1rem;
+
+//Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+$open-sans: 'Open Sans', Helvetica, sans-serif;
+
+%bodyCopy {
+	font-family: $open-sans;
+	font-size: $reset-font-size; 
+	line-height: normal;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+%fontlight{
+	font-family: $open-sans;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+%fontnormal{
+	font-family: $open-sans;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+
+%fontbold{
+	font-family: $open-sans;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Definition Font-sizes */
+
+//H1
+%head_type1{
+	font-size: 4.2rem;
+}
+//H2
+
+%head_type2{
+	font-size: 3rem;
+}
+
+
+//H3
+
+%head_type3{
+	 font-size: 2.8rem;
+}
+
+//H4
+
+%head_type4{
+	 font-size: 2.2rem;
+}
+//H5
+
+%head_type4{
+	 font-size: 1.8rem;
+}
+
+//Body
+%body_type1{
+	font-size: 1.6rem;
+}
+%body_type2{
+	font-size: 1.4rem;
+}
+%body_type3{
+	font-size: 1.2rem;
+}
+

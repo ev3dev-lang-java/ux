@@ -1,0 +1,57 @@
+
+/* Colors */
+
+$ev-orange:    #f29110;
+$ev-orange2:   #dd830c;
+
+
+$ev-white:	   #ffffff;
+$ev-white2:    #f9fafb;
+$ev-white3:    #cccccc;
+
+$ev-black:     #44505f;
+$ev-black2:    #262b33;
+$ev-black3:    #505d6e;
+$ev-black4:    #29252f;
+$ev-black5:    #282923;
+
+$ev-grey:      #d2d5df;
+$ev-grey2:     #d9d9d9;
+$ev-grey3:     #8e99a8;
+$ev-grey4:     #f5f6f7;
+
+
+
+$image-path: "../assets/svg/";
+$image-pathImg: "../assets/img/";
+
+/* Relations Colors */
+
+// $text-color: $ev-grey;
+// $text-ecredit-color: $ev-green;
+// $heading-bg:$ev-white;
+// $text-aviso-color: $ev-red;
+// $listado-bg:$ev-grey5;
+// $listado-color: $ev-grey2;
+// $listado-border-top: $ev-grey3;
+// $listado-border-bottom:	$text-color;
+
+
+//Responsive configuration
+
+$mobile: 320px; // Phone portrait minimum
+$mobile-landscape: 480px; // Phone landscape minimum
+$tablet: 768px; // Tablet portrait minimum	
+$desktop: 992px; // Laptop+Desktop minimum
+$large-desktop: 1200px; // Large screen minimum
+
+$rd-types:	(
+	xs:'min-width: #{$mobile}',
+	sm:'min-width: #{$mobile-landscape}',
+	md:'min-width: #{$tablet}',
+	lg:'min-width: #{$desktop}',
+	xl:'min-width: #{$large-desktop}'
+)!default; // Responsive configuration
+
+
+$hundred:	100%;
