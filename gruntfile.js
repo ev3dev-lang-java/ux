@@ -3,9 +3,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        webContent: 'web',
-       
-
+        webContent: 'docs',
 
         sass: {
             options: {
@@ -41,7 +39,7 @@ module.exports = function (grunt) {
             }
           },
 
-       
+
 
         copy: {
 
@@ -90,10 +88,10 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['sass', 'uglify']);
 
     grunt.registerTask('monitor', ['connect','sass','uglify', 'copy:libassets','copy:jsComponent','copy:jsLib','watch']);
-    
+
     // // solo para desarrollo
     grunt.registerTask('dev', ['sass']);
 
-   
+
 
 };
