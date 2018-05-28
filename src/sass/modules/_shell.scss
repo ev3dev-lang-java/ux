@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+pre{
+	width:100%;
+	
+    position: relative;
+    padding:2.2rem 0 0 0;
+    margin:0 0 2rem 0;
+		
+    overflow-y: visible !important;
+    overflow-x: auto;
+    font-family: monospace;
+
+    border: none;
+    box-shadow: 2px 9px 23px -6px rgba(0,0,0,0.75);
+    border-radius: 0 0 0.8rem 0.8rem;
+	white-space: initial;
+    
+    &::before{
+	    position: absolute;
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    height: 2.2rem;
+	    width: 100%;
+	    border-radius: 0.8rem 0.8rem 0 0;
+	    background: linear-gradient(to bottom, #f6f6f6 0%, #ebebeb 1%, #d3d3d3 100%);
+	    border-bottom:0.1rem solid #a0a0a0; 
+    }
+
+    &::after{
+    	position: absolute;
+	    content: "";
+	    top: 0.5rem;
+	    left: 0.8rem;
+	    width: 5.3rem;
+	    height: 1.3rem;
+	    @include ico('system_shell', left top)
+	    z-index: 2;
+
+		
+    }
+
+    code{
+		white-space: pre;
+		margin:0;
+		border:none;
+		display: block;
+	    overflow-x: auto;
+	    background: $ev-black5;
+	    color:$ev-white3;
+	    @extend %body_type3;
+	    padding: 1rem;
+    }
+}
+/* Tomorrow Night Eighties Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #999999;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #f2777a;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #f99157;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+  color: #ffcc66;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #99cc99;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+  color: #6699cc;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #cc99cc;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #2d2d2d;
+  color: #cccccc;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+

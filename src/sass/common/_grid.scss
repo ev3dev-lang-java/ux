@@ -1,0 +1,18 @@
+@charset "UTF-8";
+main {
+
+	@media (map-get($rd-types, md)){
+		article{
+			width:100%;
+		}
+	}
+	@media (map-get($rd-types, lg)){
+			article{
+			    width: 95rem;
+			    margin: 0 auto;
+			    padding: 0 15px;
+
+			}
+	}
+	
+}

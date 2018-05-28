@@ -1,0 +1,9 @@
+//Framework classes
+@mixin fwClass ($name, $public) {
+	//Create abstract class
+	%#{$name} { @content; }
+	//Create public class based on abstract
+	@if ($public) { 
+		.#{$name} { @extend %#{$name}; }
+	}
+}

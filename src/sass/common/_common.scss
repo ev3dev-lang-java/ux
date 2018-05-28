@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* Layout */
+
+html{
+	-ms-text-size-adjust: 100%; 
+ 	-webkit-text-size-adjust: 100%; 
+ 	-moz-text-size-adjust: 100%;
+	font-size:x-small;
+	
+}
+
+
+header, div{
+	outline:none;	
+}
+
+
+html,
+body{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	@extend %bodyCopy;
+	background:$ev-white;
+	position:relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	&.lock{
+		overflow:hidden;
+	}
+	
+}
+
+ul, li{
+	margin:0;
+	padding:0;
+
+	list-style:none;
+}
+
+a{
+	text-decoration: none;
+	color:$ev-orange;
+	display:inline-block;
+	cursor:pointer;
+	transition: color .2s;
+	
+	&:hover, &:focus, &:active{
+		color:$ev-orange2;
+	}
+
+	&.disabled{
+		color: $ev-grey;
+		@include disabled();
+	}
+}
+
+
+input{
+	@extend %fontnormal;
+}
+h1, h2, h3, h4{
+	margin:0;
+	padding:0;
+}
+
+h1{
+	@extend %head_type1;
+}
+
+h2{
+	@extend %head_type2;
+}
+
+h3{
+	@extend %head_type3;
+}
+
+
+button{
+	border: none;
+	cursor:pointer;
+	&:focus {outline:0;}
+}
+img{
+	border:none;
+	display:block;
+}
+@media (map-get($rd-types, md)){
+	body{
+		&.lock{
+			overflow-y: scroll;
+		}
+	}
+}
+@media (map-get($rd-types, lg)){
+	
+	body{
+		// &.lock{
+		// overflow:hidden;
+		// overflow-y: scroll;
+		// #wrapper{
+		// 	&::before{
+		// 	   display:none;
+		// 	}
+		// }
+		//}
+	}
+}
