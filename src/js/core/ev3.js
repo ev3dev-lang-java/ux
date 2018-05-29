@@ -44,10 +44,19 @@ function slider(){
 	   wrapper.not('.slick-initialized').slick({
           mobileFirst: true,
     		  infinite: true,
+          arrows: false,
     		  speed: 1000,
     		  dots: true,
     		  variableWidth: true,
     		  slidesToShow: 1,
-    	      slidesToScroll: 1
+    	    slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                arrows: true,
+              }
+            }
+          ]
 		});
 };
