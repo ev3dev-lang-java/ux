@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        webContent: 'docs',
+        webFolder: 'docs',
 
         sass: {
             options: {
@@ -12,7 +12,7 @@ module.exports = function (grunt) {
             },
             all: {
                 files: {
-                   "<%= webContent %>/css/custom.css": "src/sass/custom.scss",
+                   "<%= webFolder %>/css/custom.css": "src/sass/custom.scss",
                }
 
             }
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
 
         uglify: {
             srcjs: {
-                files: [{expand: true, cwd: 'src/js/core', src: '**.js', dest: '<%= webContent %>/js/core/'}]
+                files: [{expand: true, cwd: 'src/js/core', src: '**.js', dest: '<%= webFolder %>/js/core/'}]
             }
         },
 
@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                 },
                 port: 8000,
                 useAvailablePort: true,
-                base: 'web',
+                base: '<%= webFolder %>',
               }
             }
           },
@@ -44,23 +44,23 @@ module.exports = function (grunt) {
         copy: {
 
             libassets: {
-                files: [{expand: true, cwd: 'src/assets', src: '**/*', dest: '<%= webContent %>/assets'}]
+                files: [{expand: true, cwd: 'src/assets', src: '**/*', dest: '<%= webFolder %>/assets'}]
             },
             jsComponent:{
-               files: [{expand: true, cwd: 'src/js/component', src: '**/*', dest: '<%= webContent %>/js/component'}]
+               files: [{expand: true, cwd: 'src/js/component', src: '**/*', dest: '<%= webFolder %>/js/component'}]
             },
             jsLib:{
-               files: [{expand: true, cwd: 'src/js/lib', src: '**/*', dest: '<%= webContent %>/js/lib'}]
+               files: [{expand: true, cwd: 'src/js/lib', src: '**/*', dest: '<%= webFolder %>/js/lib'}]
             }
         },
         clean: {
             options: {force:true},
             folderJs:{
-              src:['<%= webContent %>/js/*']
+              src:['<%= webFolder %>/js/*']
             },
 
             folderAssets:{
-              src:['<%= webContent %>/assets/*']
+              src:['<%= webFolder %>/assets/*']
             }
         },
 
