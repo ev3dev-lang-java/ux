@@ -5,76 +5,20 @@ footer{
 	padding:0 1.5rem 3rem 1.5rem;
 	overflow:hidden;
 
-	h5{
-				
-		color:$ev-white;
-		@extend %body_type2;
-		@extend %fontbold;
-		margin:0 0 1rem 0;
-	}
-
-	p{
-		@extend %body_type3;
-		@extend %fontlight;
-		color:$ev-white;
-	}
-
-	.logo{
-		text-indent:-999rem;
+	&::before{
+		content:'';
 		display:block;
 		width: 20rem;
     	height: 6.5rem;
 		overflow:hidden;
-		text-indent:-999rem;
 		@include ico('logo', left bottom, cover);
-		margin:1rem 0;
+		margin:1rem auto;
 	}
 
-	ul{
-		margin:0 0 2rem 0;
-		li{	
-			margin:0 0 1rem 0;
-			&:last-child(){
-				margin:0;
-			}
-			
-			a{
-				@extend %body_type2;
-				@extend %fontlight;
-				color:$ev-white;
-			}
-		}
-	}
-
-	section{
-		display:flex;
-		flex-wrap: wrap;
-
-		article{
-			width:50%;
-
-			&:nth-child(1), &:last-child{
-				width:$hundred;
-			}
-			&:last-child{
-				border-top:0.1rem solid $ev-grey3;
-				padding:0.5rem 0;
-				text-align:center;
-
-			}
-		}
-	}
-
-	@media (map-get($rd-types, md)){
-
-		padding:3rem 1.5rem;
-		section{
-			width:80%;
-			margin:0 auto;
-
-		}
+	.logo{
 		
 	}
+
 	@media (map-get($rd-types, lg)){
 	
 		.logo{
@@ -82,26 +26,5 @@ footer{
 			height:5rem;
 		}
 
-		ul{
-			margin:0 0 4rem 0;
-		}
-			section{
-				width:95rem;
-
-				article{
-					width:$hundred/5;
-					&:nth-child(1){
-						width:20%;
-					}
-
-					&:last-child(){
-						margin:3rem 0 0 0;
-						padding:1.5rem 0;
-					}
-				}
-			}
-	}
-	@media (map-get($rd-types, xl)){
-	
 	}
 }

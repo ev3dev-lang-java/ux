@@ -4,10 +4,9 @@
  *
  * Behaviours supported & required *
  * - menuMobile
- * - Slider
 
  * @copyright (c) 2018-2019 Ev3 All Rights Reserved.
- * @date   29/05/2018
+ * @date   06/06/2018
  * @requires jQuery
  */
 
@@ -34,30 +33,3 @@ function menuMobile(){
   });
 
 }
-/**
-* @function
-* @name Slider
-* @description  Configuration Slider
-*/
-
-function slider(){
-  var wrapper = $(".s_video ul");
-  wrapper.not('.slick-initialized').slick({
-    mobileFirst: true,
-    infinite: true,
-    arrows: false,
-    speed: 1000,
-    dots: true,
-    variableWidth: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          arrows: true,
-        }
-      }
-    ]
-  });
-};

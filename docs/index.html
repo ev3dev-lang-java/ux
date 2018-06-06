@@ -17,8 +17,6 @@
   <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#050404">
   <meta name="theme-color" content="#ffffff">
-
-
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -31,9 +29,8 @@
       <li><a href="#ni">Home</a></li>
       <li><a href="#ni">Projects</a></li>
       <li><a href="http://ev3dev-lang-java.github.io/docs/support/index.html" target="_blank">Docs</a></li>
-      <!-- <li><a href="#ni">Javadocs</a></li> -->
       <li><a href="#ni">Articles</a></li>
-      <!-- <li><a class="btn">Link</a></li> -->
+      <li><a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java" target="_blank">Github</a></li>
     </ul>
 
     <div class="btn_hamb">
@@ -48,7 +45,6 @@
       <p>A project to learn <a href="http://openjdk.java.net/" target="_blank">Java</a> and create software for Mindstorms Robots using <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a> &amp; the <a href="http://www.lejos.org/" target="_blank">LeJOS</a> way.</h3></p>
       <div class="button_group">
         <a href="http://ev3dev-lang-java.github.io/docs/support/getting_started/index.html" target="_blank" class="btn">Getting Started</a>
-        <!-- <a href="/docs/download" class="btn btn-secondary">Download</a> -->
       </div>
     </article>
   </section>
@@ -74,11 +70,9 @@
   <section class="s_content type_2">
     <article>
         <h2>Features included in the whole project</h2>
-        <!-- <h2><span>Morbi eu lorem eget</span>Title h2</h2>-->
     </article>
     <article>
        <h3>Lego Mindstorms features</h3>
-       <!-- TODO improve CSS support -->
        <ul>
         <li>Regulated Motor Support</li>
         <li>Unregulated Motor Support</li>
@@ -86,12 +80,10 @@
         <li>Sounds Support</li>
         <li>EV3 LCD Support</li>
        </ul>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptas porro laboriosam, fugiat, libero suscipit quisquam magni illo perferendis, ipsam ea nesciunt tempora assumenda. Tempora illo nulla animi. Velit, nisi!</p> -->
 
     </article>
     <article>
       <h3>Robotics</h3>
-      <!-- TODO improve CSS support -->
       <ul>
         <li>OpenCV support</li>
         <li>eSpeak TTS (Text to speech) support</li>
@@ -102,7 +94,6 @@
     </article>
     <article>
       <h3>Platforms</h3>
-      <!-- TODO improve CSS support -->
       <ul>
         <li>EV3 Brick</li>
         <li>BrickPi+</li>
@@ -112,7 +103,6 @@
     </article>
     <article>
       <h3>Java features</h3>
-      <!-- TODO improve CSS support -->
       <ul>
         <li>OpenJDK Java 10 support</li>
         <li>Java profiling tools support</li>
@@ -147,33 +137,38 @@
       <h3>Evolutionary architecture</h3>
       <p>The project has in mind a modular architecture to be upgraded in the whole lifecycle of EV3 product life.</p>
 
-      <!-- TODO improve CSS support -->
-      <table>
-        <thead>
-          <th>
-            <td>Layer</td>
-            <td>Option</td>
-          </th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Platforms</td>
-            <td>EV3, BrickPi, BrickPi3 & PiStorms</td>
-          </tr>
-          <tr>
-            <td>OS</td>
-            <td>Debian Jessie/Stretch</td>
-          </tr>
-          <tr>
-            <td>JVM</td>
-            <td>OpenJDK 10</td>
-          </tr>
-          <tr>
-            <td>Runtime</td>
-            <td>EV3Dev</td>
-          </tr>
-        </tbody>
-      </table>
+
+      <ul class="tablelist_head">
+            <li>Layer</li>
+            <li>Option</li>
+       </ul>
+
+       <ul class="tablelist_body">
+          <li>
+            <ul class="tablelist_item">
+               <li>Platforms</li>
+               <li>EV3, BrickPi, BrickPi3 & PiStorms</li>
+            </ul>
+          </li>
+          <li>
+             <ul class="tablelist_item">
+               <li>OS</li>
+               <li>Debian Jessie/Stretch</li>
+             </ul>
+          </li>
+           <li>
+               <ul class="tablelist_item">
+                <li>JVM</li>
+                <li>OpenJDK 10</li>
+              </ul>
+          </li>
+          <li>
+               <ul class="tablelist_item">
+                <li>Runtime</li>
+                <li>EV3Dev</li>
+              </ul>
+          </li>
+        </ul>
     </article>
   </section>
 
@@ -231,45 +226,12 @@ $ ./gradlew installJava
 $ ./gradlew clean deployAndRun
         </code>
       </pre>
-      <!--
-      <pre>
-        <code class="language-java">
-public class MyFirstRobot {
-
-    public static void main(final String[] args) {
-
-        System.out.println("Creating Motor A & B");
-        final EV3LargeRegulatedMotor motorLeft
-          = new EV3LargeRegulatedMotor(MotorPort.A);
-        final EV3LargeRegulatedMotor motorRight
-          = new EV3LargeRegulatedMotor(MotorPort.B);
-
-        System.out.println("Defining motor speed");
-        final int motorSpeed = 200;
-        motorLeft.setSpeed(motorSpeed);
-        motorRight.setSpeed(motorSpeed);
-
-        System.out.println("Go Forward with the motors");
-        motorLeft.forward();
-        motorRight.forward();
-
-        Delay.msDelay(2000);
-
-        System.out.println("Stop motors");
-        motorLeft.stop();
-        motorRight.stop();
-    }
-}
-      </code>
-    </pre>
-  -->
     </article>
   </section>
 
   <section class="s_list">
     <article>
          <h2>Stable projects</h2>
-         <!-- <h2><span>The project has the different project o</span></h2> -->
          <ul>
            <li>
              <h4>EV3Dev-lang-java</h4>
@@ -305,7 +267,6 @@ public class MyFirstRobot {
   <section class="s_list">
     <article>
          <h2>Incubator projects</h2>
-         <!-- <h2><span>The project has the different project o</span></h2> -->
          <ul>
            <li>
              <h4>OpenJDK for EV3</h4>
@@ -341,59 +302,7 @@ public class MyFirstRobot {
     </article>
   </section>
 <footer>
-  <section>
-
-<!--
-    <article>
-      <a href="#home" class="logo">Ev3Lang</a>
-    </article>
-
-    <article>
-      <h5>Lorem ipsum dolor</h5>
-      <ul>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-      </ul>
-    </article>
-    <article>
-      <h5>Lorem ipsum dolor</h5>
-      <ul>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-      </ul>
-    </article>
-    <article>
-      <h5>Lorem ipsum dolor</h5>
-      <ul>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-      </ul>
-    </article>
-    <article>
-      <h5>Lorem ipsum dolor</h5>
-      <ul>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-        <li><a href="#ni">Link</a></li>
-      </ul>
-    </article>
-
-    <article class="copyright">
-      <p>EV3Dev-lang-java 2014-2018.</p>
-    </article>
-    -->
-</section>
+  
 </footer>
 <div class="overlay"></div>
 <div class="popup"></div>
@@ -402,9 +311,7 @@ public class MyFirstRobot {
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script type="text/javascript"   src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script type="text/javascript"   src="js/lib/slick.js"></script>
 <script type="text/javascript"   src="js/core/ev3.js"></script>
-<script type="text/javascript"   src="https://www.youtube.com/iframe_api"></script>
 <script type="text/javascript">
 $(function(){
 
@@ -414,8 +321,6 @@ $(function(){
        $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
       });
-
-       slider();
 
 });
 </script>
