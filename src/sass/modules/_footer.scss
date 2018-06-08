@@ -8,8 +8,8 @@ footer{
 	&::before{
 		content:'';
 		display:block;
-		width: 20rem;
-    	height: 6.5rem;
+		width: 21rem;
+    	height: 3.5rem;
 		overflow:hidden;
 		@include ico('logo', left bottom, cover);
 		margin:1rem auto;
