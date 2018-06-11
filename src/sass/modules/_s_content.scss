@@ -6,7 +6,9 @@
 	color:$ev-black;
 	border-bottom:0.1rem solid $ev-grey;
 	
-	
+	img{
+		margin:0 0 2rem 0;
+	}
 
 	
 	h2{
@@ -39,6 +41,7 @@
 	}
 
 	ul{
+		margin:0 0 2rem 0;
 		li{
 				
 				
@@ -63,6 +66,7 @@
 	}
 
 	.tablelist_head{
+		margin:0;
 		padding:0 0 0.5rem 0;
 		border-bottom:0.1rem solid $ev-orange2;
 		display:flex;
@@ -76,6 +80,7 @@
 	}
 
 	.tablelist_body{
+		margin:0;
 		padding:1rem 0 0 0;
 		li{	
 			&::before{
