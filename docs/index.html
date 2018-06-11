@@ -42,7 +42,7 @@
   <section class="s_01">
     <article>
       <h1>EV3Dev-lang-java</h1>
-      <p>A project to learn <a href="http://openjdk.java.net/" target="_blank">Java</a> and create software for Mindstorms Robots using <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a> &amp; the <a href="http://www.lejos.org/" target="_blank">LeJOS</a> way.</h3></p>
+      <p>A <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank">FOSS</a> project to learn <a href="http://openjdk.java.net/" target="_blank">Java</a> and create software for Mindstorms Robots using <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a> &amp; the <a href="http://www.lejos.org/" target="_blank">LeJOS</a> way.</h3></p>
       <div class="button_group">
         <a href="http://ev3dev-lang-java.github.io/docs/support/getting_started/index.html" target="_blank" class="btn">Getting Started</a>
       </div>
@@ -56,7 +56,7 @@
     <article>
       <h3>Lego Mindstorms ecosystem</h3>
       <p>
-      Lego Mindstorms ecosystem is an educational way to learn
+      <strong>Lego Mindstorms ecosystem</strong> is an educational way to learn
       <strong>the Java programming language</strong> and <strong>Robotics</strong> in an easy way.
       Now, it is possible to install a complete Linux distro in the
       third generation of the product and others companies like Mindsensors
@@ -133,45 +133,6 @@
           </span>
       </h2>
     </article>
-    <article>
-      <h3>Evolutionary architecture</h3>
-      <p>The project has in mind a modular architecture to be upgraded in the whole lifecycle of EV3 product life.</p>
-
-
-      <ul class="tablelist_head">
-            <li>Layer</li>
-            <li>Option</li>
-       </ul>
-
-       <ul class="tablelist_body">
-          <li>
-            <ul class="tablelist_item">
-               <li>Platforms</li>
-               <li>EV3, BrickPi, BrickPi3 & PiStorms</li>
-            </ul>
-          </li>
-          <li>
-             <ul class="tablelist_item">
-               <li>OS</li>
-               <li>Debian Jessie/Stretch</li>
-             </ul>
-          </li>
-           <li>
-               <ul class="tablelist_item">
-                <li>JVM</li>
-                <li>OpenJDK 10</li>
-              </ul>
-          </li>
-          <li>
-               <ul class="tablelist_item">
-                <li>Runtime</li>
-                <li>EV3Dev</li>
-              </ul>
-          </li>
-        </ul>
-    </article>
-  </section>
-
 
   <section class="s_content type_2b">
     <article>
@@ -229,6 +190,45 @@ $ ./gradlew clean deployAndRun
     </article>
   </section>
 
+  <article>
+    <h3>Evolutionary architecture</h3>
+    <p>The project has in mind a modular architecture to be upgraded in the whole lifecycle of EV3 product life.</p>
+
+
+    <ul class="tablelist_head">
+          <li>Layer</li>
+          <li>Option</li>
+     </ul>
+
+     <ul class="tablelist_body">
+        <li>
+          <ul class="tablelist_item">
+             <li>Platforms</li>
+             <li>EV3, BrickPi, BrickPi3 & PiStorms</li>
+          </ul>
+        </li>
+        <li>
+           <ul class="tablelist_item">
+             <li>OS</li>
+             <li>Debian Jessie/Stretch</li>
+           </ul>
+        </li>
+         <li>
+             <ul class="tablelist_item">
+              <li>JVM</li>
+              <li>OpenJDK 10</li>
+            </ul>
+        </li>
+        <li>
+             <ul class="tablelist_item">
+              <li>Runtime</li>
+              <li>EV3Dev</li>
+            </ul>
+        </li>
+      </ul>
+  </article>
+</section>
+
   <section class="s_list">
     <article>
          <h2>Stable projects</h2>
@@ -264,45 +264,8 @@ $ ./gradlew clean deployAndRun
          </ul>
     </article>
   </section>
-  <section class="s_list">
-    <article>
-         <h2>Incubator projects</h2>
-         <ul>
-           <li>
-             <h4>OpenJDK for EV3</h4>
-             <p>A custom Build of OpenJDK 9/10/11 for Lego mindstorms EV3, a ARM5 Soft Float device.</p>
-             <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java" target="_blank">Github</a><br />
-             <a href="https://ci.adoptopenjdk.net/view/ev3dev/" target="_blank">Jenkins</a>
-           </li>
-           <li>
-             <h4>USB Devices</h4>
-             <p>A Java libraries to manage USB devices like Controllers, Arduinos, IMUs, GPS, etc...</p>
-             <a href="https://github.com/ev3dev-lang-java/usb-devices" target="_blank">Github</a><br />
-             <a href="http://ev3dev-lang-java.github.io/docs/api/latest/usb-devices/index.html" target="_blank">Javadocs</a><br />
-             <a href="https://jitpack.io/#ev3dev-lang-java/usb-devices" target="_blank">Maven</a>
-           </li>
-           <li>
-             <h4>LeJOS navigation</h4>
-             <p>LeJOS local navigation stack.</p>
-             <a href="https://github.com/ev3dev-lang-java/lejos-navigation" target="_blank">Github</a><br />
-             <a href="http://ev3dev-lang-java.github.io/docs/api/latest/lejos-navigation/index.html" target="_blank">Javadocs</a><br />
-             <a href="https://jitpack.io/#ev3dev-lang-java/lejos-navigation" target="_blank">Maven</a>
-           </li>
-           <li>
-             <h4>ROS Client</h4>
-             <p>A library to interact with ROS for Mindstorms Bricks.</p>
-             <a href="https://github.com/ev3dev-lang-java/ros-client" target="_blank">Github</a><br />
-           </li>
-           <li>
-             <h4>ROS</h4>
-             <p>A ROS repository to manage all developments to run on your laptop for SLAM purposes</p>
-             <a href="https://github.com/ev3dev-lang-java/ros" target="_blank">Github</a><br />
-           </li>
-         </ul>
-    </article>
-  </section>
 <footer>
-  
+
 </footer>
 <div class="overlay"></div>
 <div class="popup"></div>
