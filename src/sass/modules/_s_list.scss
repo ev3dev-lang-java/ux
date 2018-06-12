@@ -80,6 +80,10 @@
 				 &:last-child(){
 				 	margin:0 0 0 0.5rem;
 				 }
+				 &:hover{
+				    	border-color: transparent;
+		    			box-shadow: none;
+				    }
 		    	a{
 		    		display:block;
 		    		width:3.5rem;
@@ -87,6 +91,8 @@
 		    		overflow:hidden;
 
 		    		@include ico('ico_docs');
+
+		    		
 
 		
 		    		&.git{
