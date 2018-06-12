@@ -89,20 +89,15 @@
 		    		width:3.5rem;
 		    		height:3.5rem;	
 		    		overflow:hidden;
-
-		    		@include ico('ico_docs');
-
-		    		
-
 		
 		    		&.git{
-						background-position:left top;
+						@include ico('ico_docs_git', left top);
 		    		}
 		    		&.mav{
-
+						@include ico('ico_docs_mav', left top);
 		    		}
 		    		&.jav{
-		    			background-position:right top;
+		    			@include ico('ico_docs_jav', left top);
 		    		}
 		    	}
 
