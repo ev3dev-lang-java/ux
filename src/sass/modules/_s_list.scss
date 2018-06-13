@@ -73,14 +73,12 @@
 		    	border:none;
 		    	display:inline-block;
 		    	margin:0 0 0 0.5rem;
-		    	padding:0 0.5rem 0 0;
 		    	overflow:hidden;
 		    	width:auto;
-		    	border-right:1px solid $ev-orange;
-				 &:last-child(){
+		  		 &:last-child(){
 				 	margin:0 0 0 0.5rem;
 				 	border:none;
-				 	padding:0;
+
 				 }
 				 &:hover{
 			    	border-color: transparent;
