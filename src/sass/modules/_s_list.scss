@@ -72,33 +72,23 @@
 		    li{
 		    	border:none;
 		    	display:inline-block;
-		    	width:3.5rem;
-		    	height:3.5rem;
 		    	margin:0 0 0 0.5rem;
-		    	padding:0;
+		    	padding:0 0.5rem 0 0;
 		    	overflow:hidden;
+		    	width:auto;
+		    	border-right:1px solid $ev-orange;
 				 &:last-child(){
 				 	margin:0 0 0 0.5rem;
+				 	border:none;
+				 	padding:0;
 				 }
 				 &:hover{
-				    	border-color: transparent;
-		    			box-shadow: none;
-				    }
+			    	border-color: transparent;
+	    			box-shadow: none;
+			    }
 		    	a{
 		    		display:block;
-		    		width:3.5rem;
-		    		height:3.5rem;	
 		    		overflow:hidden;
-		
-		    		&.git{
-						@include ico('ico_docs_git', left top);
-		    		}
-		    		&.mav{
-						@include ico('ico_docs_mav', left top);
-		    		}
-		    		&.jav{
-		    			@include ico('ico_docs_jav', left top);
-		    		}
 		    	}
 
 		    }
