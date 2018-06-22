@@ -19,8 +19,7 @@ header{
    		position:fixed;
 
 	   &.open{
-	     	
-	     	 z-index:10;
+	   		z-index:10;
 	     	 height:100%;
 			h2,ul{
 				transform: translateX(0);
@@ -140,7 +139,6 @@ header{
 
 
 	    }
-
 	}
 
 
@@ -183,8 +181,32 @@ header{
 						font-size: 15px;
 						transition:color .3s;
 						color:rgba(255, 255, 255, 0.8);
-						.select, &:hover{
+
+						transform: perspective(1px) translateZ(0);
+
+						&::before {
+							content:'';
+						    position: absolute;
+						    z-index: -1;
+						    left: 50%;
+						    right: 50%;
+						    bottom: 0;
+						    background: $ev-white;
+						    height: 2px;
+						    transition-property: left, right;
+						    transition-duration: 0.3s;
+						    transition-timing-function: ease-out;
+						}
+						&.select, &:hover, &:focus, &:active{
 							color:$ev-white;
+							&::before {
+								left: 0;
+								right: 0;
+							}
+						}
+
+						&.select{
+							@include disabled();
 						}
 					}
 					&:nth-child(5) {
@@ -205,5 +227,10 @@ header{
 			}
 		}
 	}
-	@media (map-get($rd-types, lg)){}
+	@media (map-get($rd-types, lg)){
+		article{
+
+		}
+		transform: perspective(1px) translateZ(0);
+	}
 }

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.docs{
+	
+	padding:1rem;
+
+	h1, h2, h3{
+		@extend %fontlight;
+		margin:0 0 1rem 0;
+	}
+
+	h1{
+		@extend %head_type2;
+	}
+
+	h2{
+		@extend %head_type3;
+	}
+
+	h3{
+		@extend %head_type4;
+	}
+
+	p{
+		@extend %body_type2;
+		@extend %fontnormal;
+		margin:1rem 0;
+		color:$ev-black;
+		line-height:2;
+	}
+
+	ol, ul {
+		    margin: 0 0 1rem 0;
+    		
+    		
+		li{
+			@extend %body_type2;
+			@extend %fontnormal;
+			color:$ev-black;
+			line-height:2;
+			margin:0 0 1rem 0;
+		}
+	}
+	
+	ol{
+		padding:0 2rem;
+		li{
+			list-style-type: decimal;
+		}
+	}
+
+	ul{
+		li{
+			padding:0 2rem 0 2rem;
+			margin: 0 0 1rem 0.5rem;
+			position:relative;
+			&::before{
+				content: "";
+			    position: absolute;
+			    top: 11px;
+			    left: 0;
+			    width: 3px;
+			    height: 3px;
+			    border-radius: 50%;
+			    background-color: $ev-black;
+			}
+		}
+	}
+
+	pre{
+
+		padding:0;
+		border-radius: 0.5rem;
+		box-shadow:none;
+		margin:0 0 1rem 0;
+		code{
+
+		}
+		&::after{
+			display:none;
+		}
+
+		&::before{
+		display:none;
+		}
+	}
+
+
+	@media (map-get($rd-types, md)){}
+	
+	@media (map-get($rd-types, lg)){}
+}

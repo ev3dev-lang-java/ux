@@ -23,8 +23,10 @@ $theme: st_main;
 @import "modules/s_01";
 @import "modules/s_content";
 @import "modules/s_list";
-
+@import "modules/docs";
 @import "modules/shell";
+
+
 
 /* Footer */
 @import "modules/footer";

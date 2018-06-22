@@ -82,6 +82,7 @@ h3{
 }
 
 
+
 button{
 	border: none;
 	cursor:pointer;
@@ -92,23 +93,15 @@ img{
 	display:block;
 }
 @media (map-get($rd-types, md)){
-	body{
-		&.lock{
-			overflow-y: scroll;
+
+	main{
+		&.content{
+			padding:7rem 0 0 0;
 		}
 	}
+
+	
 }
 @media (map-get($rd-types, lg)){
 	
-	body{
-		// &.lock{
-		// overflow:hidden;
-		// overflow-y: scroll;
-		// #wrapper{
-		// 	&::before{
-		// 	   display:none;
-		// 	}
-		// }
-		//}
-	}
 }
