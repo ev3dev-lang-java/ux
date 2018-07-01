@@ -13,6 +13,7 @@ header{
 
     &.content{
     	height:8.6rem;
+    	background: $ev-white;
     }
 
 	article{
@@ -107,42 +108,12 @@ header{
 
 	.btn_hamb{
 		position: absolute;
-    	top: 25px;
-	    right: 15px;
+    	top: 2.5rem;
+	    right: 1.5rem;
 	    z-index:1;
 	    transition: background 750ms ease-in-out;
 	    user-select: none;
 	    cursor: pointer;
-
-	    .hamb{
-	    	position: relative;
-		    width: 25px;
-		    height: 20px;
-		    transition: transform 750ms ease-in-out;
-
-		    .inner, &::before, &::after{
-		    	content: '';
-			    position: absolute;
-			    width: 25px;
-			    height: 2px;
-			    background: #ccc;
-			    transform-origin: 100% 50%;
-			    transition: all 750ms ease-in-out;
-		    }
-
-		    &::before{
-				    top: -0.1rem;
-		    }
-		    .inner{
-		    	top:0.9rem;
-		    }
-
-		    &::after{
-				bottom:0;
-		    }
-
-
-	    }
 	}
 
 	&.content{
@@ -152,10 +123,7 @@ header{
 			}
 		}
 	}
-
-
-
-
+	
 	@media (map-get($rd-types, md)){
 
 	    padding: 1rem 0;

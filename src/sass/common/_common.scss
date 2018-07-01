@@ -97,6 +97,10 @@ img{
 	main{
 		&.content{
 			padding:7rem 0 0 0;
+			section{
+				display:flex;
+				flex-wrap: wrap;
+			}
 		}
 	}
 

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+ .hamb{
+	position: relative;
+    width: 2.5rem;
+    height: 2rem;
+    transition: transform 750ms ease-in-out;
+
+    .inner, &::before, &::after{
+    	content: '';
+	    position: absolute;
+	    width: 2.5rem;
+	    height: 0.2rem;
+	    background: $ev-white3;
+	    transform-origin: 100% 50%;
+	    transition: all 750ms ease-in-out;
+    }
+
+    &::before{
+		    top: -0.1rem;
+    }
+    .inner{
+    	top:0.9rem;
+    }
+
+    &::after{
+		bottom:0;
+    }
+}
+
+
