@@ -11,8 +11,11 @@ header{
     z-index:7;
     background: $ev-white;
 
-	article{
+    &.content{
+    	height:8.6rem;
+    }
 
+	article{
 		display:block;
 		width: 100%;
    		margin: 0 auto;
@@ -43,6 +46,7 @@ header{
 		 }
 	}
 	
+
 
 	h2, ul{
 		transform: translateX(100%);
@@ -141,6 +145,14 @@ header{
 	    }
 	}
 
+	&.content{
+		article{
+			h2{
+				transform: translateX(0);
+			}
+		}
+	}
+
 
 
 
@@ -225,6 +237,41 @@ header{
 					transform: translateX(0);
 				}
 			}
+		}
+
+		&.content{
+			
+			height:9.2rem;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+			article{
+				display: flex;
+    			align-items: center;
+
+    			ul{
+				width:57rem;
+				display:flex;
+					li{
+						a{
+							color:$ev-grey3;
+							&::before{
+								background:	$ev-grey3;
+							}
+						}
+
+						&:nth-child(5) a{
+							background-position:left bottom;
+						}
+					}
+				}
+			}
+			h2{
+				display:inline-block;
+				border:none;
+				transform: translateX(0);
+			}
+
+			
 		}
 	}
 	@media (map-get($rd-types, lg)){

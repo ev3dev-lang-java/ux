@@ -2,7 +2,7 @@
 
 .docs{
 	
-	padding:1rem;
+	padding:9rem 1rem 1rem 1rem;
 
 	h1, h2, h3{
 		@extend %fontlight;
@@ -86,7 +86,9 @@
 	}
 
 
-	@media (map-get($rd-types, md)){}
+	@media (map-get($rd-types, md)){
+		padding:4rem 1rem 1rem 1rem;
+	}
 	
 	@media (map-get($rd-types, lg)){}
 }
