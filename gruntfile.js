@@ -1,5 +1,7 @@
-module.exports = function (grunt) {
-    'use strict';
+'use strict';
+const sass = require('node-sass');
+
+module.exports = grunt => {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -7,23 +9,26 @@ module.exports = function (grunt) {
 
         sass: {
             options: {
-                outputStyle: 'compressed',
-                sourceMap: false
-            },
-            all: {
-                files: {
-                   "<%= webFolder %>/css/custom.css": "src/sass/custom.scss",
-               }
+                implementation: sass,
+                outputStyle: 'compressed'
 
+            },
+            sourceMapSimple: {
+                options: {
+                    sourceMap: false
+                }
+            },
+            compile: {
+                files: {
+                    '<%= webFolder %>/css/custom.css': 'src/sass/custom.scss',
+                }
             }
         },
-
         uglify: {
             srcjs: {
                 files: [{expand: true, cwd: 'src/js/core', src: '**.js', dest: '<%= webFolder %>/js/core/'}]
             }
         },
-
         connect: {
             server: {
               options: {
