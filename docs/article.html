@@ -41,16 +41,18 @@
 <main class="content">
   <section>
       <article class="submenu">
-        <ul>
-          <li>
-              <a href="#">Level 1</a>
-              <ul>
-                <li><a href="">SubLevel 1</a></li>
-                <li><a href="">SubLevel 1b</a></li>
-                <li><a href="">SubLevel 1c</a></li>
-              </ul>
-          </li>
-        </ul>
+        <div>
+          <ul>
+            <li>
+                <a href="#">Level 1</a>
+                <ul>
+                  <li><a href="">SubLevel 1</a></li>
+                  <li><a href="">SubLevel 1b</a></li>
+                  <li><a href="">SubLevel 1c</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
       </article>
 
       <div class="btn_submenu">
@@ -106,6 +108,7 @@ $ vi config.gradle
 $(function(){
 
     menuMobile();
+    submenuMobile();
 
     //Activation highlight
        $('pre code').each(function(i, block) {

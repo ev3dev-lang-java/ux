@@ -93,7 +93,12 @@ img{
 	display:block;
 }
 @media (map-get($rd-types, md)){
-
+	
+	body{
+		&.lock{
+			overflow-y:visible;
+		}
+	}
 	main{
 		&.content{
 			padding:7rem 0 0 0;

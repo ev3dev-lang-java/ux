@@ -87,7 +87,8 @@
 
 
 	@media (map-get($rd-types, md)){
-		padding:4rem 1rem 1rem 1rem;
+		padding:4rem 1rem 1rem 4rem;
+		width:70%;
 	}
 	
 	@media (map-get($rd-types, lg)){}
