@@ -104,7 +104,7 @@
     <article>
       <h3>Java features</h3>
       <ul>
-        <li>OpenJDK Java 10 support</li>
+        <li>OpenJDK Java 11 support</li>
         <li>Java profiling tools support</li>
         <li>Logging support based on SLF4J</li>
         <li>Support for ELK stack</li>
@@ -115,13 +115,13 @@
   <section class="s_content type_1">
     <article>
       <h2>
-        OpenJDK 10 supported
+        OpenJDK 11 supported
         <span>
         Learn Java with the latest version
         </span>
       </h2>
       <h2>
-        Debian Jessie/Stretch
+        Debian Stretch
         <span>
         Learn Linux in an easy way
         </span>
@@ -169,12 +169,15 @@ $ vi config.gradle
 
       <pre>
         <code class="language-javascript">
-remotes {
-    ev3dev {
-        host = '192.168.1.86'
-        user = 'robot'
-        password = 'maker'
-    }
+// Project configuration
+brick.pref {
+    // Main class //
+    mainClass = "example.programming.HelloWorld"
+
+    // Brick connection parameters //
+    sshHost = "10.0.0.89"
+    sshUser = "robot"
+    sshPassword = "maker"
 }
         </code>
       </pre>
@@ -183,8 +186,8 @@ remotes {
         <code class="language-shell">
 $ ./gradlew testConnection
 $ ./gradlew getInstaller
-$ ./gradlew installJava
-$ ./gradlew clean deployAndRun
+$ ./gradlew installJavaLibraries
+$ ./gradlew clean deployRun
         </code>
       </pre>
     </article>
@@ -210,21 +213,27 @@ $ ./gradlew clean deployAndRun
         <li>
            <ul class="tablelist_item">
              <li>OS</li>
-             <li>Debian Jessie/Stretch</li>
+             <li>Debian Stretch</li>
            </ul>
         </li>
          <li>
              <ul class="tablelist_item">
-              <li>JVM</li>
-              <li>OpenJDK 10</li>
-            </ul>
-        </li>
-        <li>
+                 <li>Runtime</li>
+                 <li>EV3Dev</li>
+             </ul>
+         </li>
+         <li>
              <ul class="tablelist_item">
-              <li>Runtime</li>
-              <li>EV3Dev</li>
+              <li>JVM</li>
+              <li>OpenJDK 11</li>
             </ul>
         </li>
+         <li>
+             <ul class="tablelist_item">
+                 <li>Java Library</li>
+                 <li>EV3Dev-lang-java</li>
+             </ul>
+         </li>
       </ul>
   </article>
 </section>
