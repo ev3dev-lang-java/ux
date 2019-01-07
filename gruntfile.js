@@ -11,7 +11,6 @@ module.exports = grunt => {
             options: {
                 implementation: sass,
                 outputStyle: 'compressed'
-
             },
             sourceMapSimple: {
                 options: {
@@ -43,8 +42,6 @@ module.exports = grunt => {
               }
             }
           },
-
-
 
         copy: {
 

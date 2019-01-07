@@ -72,43 +72,6 @@
 	#{$property}: calc(#{$expression}); 
 }
 
-
-/*  ++++++++++++++++++++++++++++
-** Animaciones y Keyframes 
-+++++++++++++++++++++++++++++ */
-@mixin animation($value) {
-  -webkit-animation: $value;
-	 -moz-animation: $value;
-	   -o-animation: $value;
-	  -ms-animation: $value;
-		  animation: $value;
-}
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} { @content }
-  @-moz-keyframes #{$name}    { @content }
-  @-o-keyframes #{$name}      { @content }
-  @-ms-keyframes #{$name}     { @content }
-  @keyframes #{$name}         { @content }
-}
-
-/* ++++++++++++++++++++++++++++++
-*** Flex Box ***
-+++++++++++++++++++++++++++++++ */
-@mixin flexbox ($flex-direction:row, $justify-content:flex-start, $align-items:stretch, $flex-wrap: nowrap){
-	//display: -ms-flexbox;
-	display: flex;
-	//-ms-flex-direction: $flex-direction;
-	flex-direction: $flex-direction;
-	//-ms-justify-content: $justify-content;
-	justify-content: $justify-content;
-	//-ms-align-items: $align-items;
-	align-items: $align-items;
-	//-ms-flex-wrap: $flex-wrap;
-	flex-wrap: $flex-wrap;
-	min-height:100%;
-}
-
 @mixin grid (){
 	display: gird;
 	display: -ms-grid;
