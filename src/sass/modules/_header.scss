@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 header{
-	
+
 	position: absolute;
 	top: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0;
-    z-index:7;
-    background: $ev-white;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  z-index:7;
+  background: $ev-white;
 
     &.content{
     	height:8.6rem;
@@ -46,7 +46,7 @@ header{
 		 	}
 		 }
 	}
-	
+
 
 
 	h2, ul{
@@ -91,7 +91,7 @@ header{
 			}
 			&:nth-child(5){
 				a{
-					
+
 					display:block;
 					width:4rem;
 					height:4rem;
@@ -99,21 +99,19 @@ header{
 					text-indent:-999rem;
 					@include ico('github', left bottom, cover);
 				}
-			
+
 			}
-
-
 		}
 	}
 
 	.btn_hamb{
 		position: absolute;
-    	top: 2.5rem;
-	    right: 1.5rem;
-	    z-index:1;
-	    transition: background 750ms ease-in-out;
-	    user-select: none;
-	    cursor: pointer;
+    top: 2.5rem;
+    right: 1.5rem;
+    z-index:1;
+    transition: background 750ms ease-in-out;
+    user-select: none;
+    cursor: pointer;
 	}
 
 	&.content{
@@ -123,10 +121,10 @@ header{
 			}
 		}
 	}
-	
+
 	@media (map-get($rd-types, md)){
 
-	    padding: 1rem 0;
+	  padding: 1rem 0;
 		height: auto;
 		overflow: auto;
 		background: transparent;
@@ -161,7 +159,6 @@ header{
 						font-size: 15px;
 						transition:color .3s;
 						color:rgba(255, 255, 255, 0.8);
-
 						transform: perspective(1px) translateZ(0);
 
 						&::before {
@@ -196,7 +193,7 @@ header{
 							padding:0;
 							background-position: left top;
 						}
-						
+
 					}
 				}
 			}
@@ -208,29 +205,27 @@ header{
 		}
 
 		&.content{
-			
-			height:9.2rem;
+      height:9.2rem;
+      overflow: hidden;
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
 			article{
 				display: flex;
     			align-items: center;
 
-    			ul{
-				width:57rem;
-				display:flex;
-					li{
-						a{
-							color:$ev-grey3;
-							&::before{
-								background:	$ev-grey3;
-							}
-						}
-
-						&:nth-child(5) a{
-							background-position:left bottom;
-						}
-					}
+    		ul{
+          width:57rem;
+          display:flex;
+          li{
+            a{
+              color:$ev-grey3;
+              &::before{
+                background:	$ev-grey3;
+              }
+            }
+            &:nth-child(5) a{
+              background-position:left bottom;
+            }
+          }
 				}
 			}
 			h2{
@@ -238,14 +233,9 @@ header{
 				border:none;
 				transform: translateX(0);
 			}
-
-			
 		}
 	}
 	@media (map-get($rd-types, lg)){
-		article{
-
-		}
 		transform: perspective(1px) translateZ(0);
 	}
 }
