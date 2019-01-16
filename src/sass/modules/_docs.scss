@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .docs{
-	
+
 	padding:9rem 1rem 1rem 1rem;
 
 	h1, h2, h3{
@@ -31,8 +31,8 @@
 
 	ol, ul {
 		    margin: 0 0 1rem 0;
-    		
-    		
+
+
 		li{
 			@extend %body_type2;
 			@extend %fontnormal;
@@ -41,7 +41,7 @@
 			margin:0 0 1rem 0;
 		}
 	}
-	
+
 	ol{
 		padding:0 2rem;
 		li{
@@ -65,7 +65,29 @@
 			    background-color: $ev-black;
 			}
 		}
-	}
+  }
+  .table_content{
+    overflow-x:auto;
+    margin:1rem 0;
+    table{
+      display: block;
+      width: 100%;
+
+      tr{
+        background: $ev-white;
+        border-top: 1px solid $ev-grey3;
+        &:nth-child(2n){ background:$ev-grey4 }
+      }
+      th, td{
+        border: 1px solid $ev-grey;
+        padding: 6px 13px;
+        @extend %body_type2;
+        @extend %fontnormal;
+        vertical-align: middle;
+
+      }
+    }
+  }
 
 	pre{
 
@@ -73,9 +95,6 @@
 		border-radius: 0.5rem;
 		box-shadow:none;
 		margin:0 0 1rem 0;
-		code{
-
-		}
 		&::after{
 			display:none;
 		}
@@ -90,6 +109,4 @@
 		padding:4rem 1rem 1rem 4rem;
 		width:70%;
 	}
-	
-	@media (map-get($rd-types, lg)){}
 }
