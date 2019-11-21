@@ -2,11 +2,11 @@
 
 pre{
 	width:100%;
-	
+
     position: relative;
     padding:2.2rem 0 0 0;
     margin:0 0 2rem 0;
-		
+
     overflow-y: visible !important;
     overflow-x: auto;
     font-family: monospace;
@@ -15,7 +15,7 @@ pre{
     box-shadow: 2px 9px 23px -6px rgba(0,0,0,0.75);
     border-radius: 0 0 0.8rem 0.8rem;
 	white-space: initial;
-    
+
     &::before{
 	    position: absolute;
 	    content: "";
@@ -25,7 +25,7 @@ pre{
 	    width: 100%;
 	    border-radius: 0.8rem 0.8rem 0 0;
 	    background: linear-gradient(to bottom, #f6f6f6 0%, #ebebeb 1%, #d3d3d3 100%);
-	    border-bottom:0.1rem solid #a0a0a0; 
+	    border-bottom:0.1rem solid #a0a0a0;
     }
 
     &::after{
@@ -35,10 +35,10 @@ pre{
 	    left: 0.8rem;
 	    width: 5.3rem;
 	    height: 1.3rem;
-	    @include ico('system_shell', left top)
+	    @include ico('system_shell', left top);
 	    z-index: 2;
 
-		
+
     }
 
     code{
