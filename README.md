@@ -5,7 +5,7 @@ A repository about UX works for the project
 
 ### Requirements
 
-You need to have the node version v10.15.0 installed
+You need to have the node version v12.13.1 installed
 
 ### Install
 
